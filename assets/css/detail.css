@@ -1,0 +1,207 @@
+
+.content{
+    padding: 1rem;
+    background-color: #d0dbf0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+
+.card{
+    background-color: #FC6C6D;
+    width: 400px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-radius: 2rem;
+
+}
+
+.title{
+    width: max-content;
+    height: max-content;
+    letter-spacing: 2px;
+    color: white;
+    margin: 1rem;
+    margin-top: -50px;
+    margin-left: 50px;
+    font-size: larger;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.back_page img{
+    width: 60px;
+    height: 40px;
+    margin: 1rem;
+    margin-top: 15px;
+}
+
+.heart img{
+    width: 60px;
+    height: 20px;
+    margin: 1rem;
+    margin-top: 25px;
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: max-content;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 39px;
+    color: white;
+}
+
+.type1{
+    
+    width: 100px;
+    padding: 6px;
+    border-radius: 1rem;
+    margin-left: 10px;
+}
+
+.type2{
+    
+    width: 100px;
+    padding: 6px;
+    border-radius: 1rem;
+    margin-left: 10px;
+}
+
+
+.image_body{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+}
+
+#imgPoke{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+/*body tags*/
+
+.card_body{
+    background-color: white;
+    width: 400px;
+    border-radius: 2.3rem 2.3rem 2rem 2rem;
+    height: 370px;
+}
+
+.body_tags{
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    padding: 8px;
+    margin-top: 45px;
+    color: #CECFD1;
+}
+
+/*about tags*/
+
+.about{
+    display: block;
+    border-bottom: 2px solid #777DA7;
+    font-size: 15px;
+    color: black;
+}
+
+.about_tags{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-left: 20px;
+    color: #CECFD1;
+}
+
+.species{
+    padding-bottom: 13px
+}
+
+.height{
+    padding-bottom: 13px
+}
+
+.weight{
+    padding-bottom: 13px
+}
+
+.abilities{
+    padding-bottom: 3px
+}
+
+.breeding{
+    margin: 0;
+}
+
+#br1{
+    color: black;
+    font-size: large;
+    margin: 1.5rem;
+    margin-left: 0px;
+}
+
+.gender{
+    padding-bottom: 13px
+}
+
+.egg_group{
+    padding-bottom: 13px
+}
+
+.egg_cycle{
+    padding-bottom: 13px
+}
+
+/**/
+
+.base_stats{
+
+}
+
+.evolution{
+
+}
+
+.moves{
+
+}
+
+@media screen and (max-width: 992px){
+    .card{
+        width: 450px;
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .card{
+        width: 400px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .card{
+        width: 400px;
+        height: 550px;
+    }
+}
