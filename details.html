@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/detail.css">
+    <link rel="stylesheet" href="/assets/css/acordeon.css">
+    <link rel="stylesheet" href="/assets/css/types.css">
+</head>
+
+<body>
+    <section class="content">
+        <div class="card" id="cardList" onload="">
+
+            <div class="card-header">
+                <div class="back_page">
+                    <img src="/assets/img/arrow-left.svg" alt="" srcset="">
+                </div>
+                <div class="heart">
+                    <img src="/assets/img/heart.svg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="card-title">
+                <h1>Charizard</h1>
+                <ul class="type">
+                    <li class="fire">fire</li>
+                    <li class="dragon">dragon</li>
+                </ul>
+            </div>
+            
+
+            <div class="image_body">
+                <img src="/assets/img/6000.png" id="imgPoke" alt="" srcset="">
+            </div>
+
+            <div class="card_body">
+                <div class="body_tags">
+                    <div class="about"><button type="button">About</button></div>
+                    <div class="base_stats active"><button type="button">Base Stats</button></div>
+                    <div class="evolution"><button type="button">Evolution</button></div>
+                    <div class="moves"><button type="button">Moves</button></div>
+                </div>
+                <div class="content-card">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <p>Species</p>
+                            </li>
+                            <li>
+                                <p>Height</p>
+                            </li>
+                            <li>
+                                <p>Weight</p>
+                            </li>
+                            <li>
+                                <p>Abilities</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="extra-details">
+                        <h4 id="extra-details">Breeding</h4>
+                        <div class="gender">Gender</div>
+                        <div class="egg_group">Egg Groups</div>
+                        <div class="egg_cycle">Egg Cycle</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/poke_model.js"></script>
+    <script src="assets/js/poke_api.js"></script>
+    <script src="assets/js/details.js"></script>
+    <script src="assets/js/acordeon.js"></script>
+</body>
+
+</html>

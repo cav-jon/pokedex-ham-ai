@@ -4,15 +4,11 @@ class Pokemon{
     name;
     type;
     types = [];
-    photo;   
-}
-//a classe agora se estende de Pokemon, para obter o nome, foto e demais tipos
-class PokemonDetails extends Pokemon{
+    photo;
     species;
     height;
     weight;
     abilities = [];
     gender;
-    egg;
-
+    egg;   
 }

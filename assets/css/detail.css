@@ -1,5 +1,4 @@
-
-.content{
+.content {
     padding: 1rem;
     background-color: #d0dbf0;
     height: 100vh;
@@ -8,7 +7,6 @@
     align-items: center;
     justify-content: center;
 }
-
 body{
     background-color: #FFFFFF;
 }
@@ -16,77 +14,70 @@ body{
 
 .card{
     background-color: #FC6C6D;
-    width: 400px;
-    height: 650px;
+    width: 450px;
+    height: 550px;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    align-content: center;
     border-radius: 2rem;
 
 }
-
-.title{
-    width: max-content;
-    height: max-content;
-    letter-spacing: 2px;
-    color: white;
-    margin: 1rem;
-    margin-top: -50px;
-    margin-left: 50px;
-    font-size: larger;
-}
-
-.icons{
+.card-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.back_page img{
+.back_page img,
+.heart img {
     width: 60px;
+    height: 30px;
+    margin: 1rem;
+    margin-top: 1.2rem;
+}
+
+.back_page img {
     height: 40px;
-    margin: 1rem;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
-.heart img{
-    width: 60px;
-    height: 20px;
-    margin: 1rem;
-    margin-top: 25px;
-}
-
-.tags{
+.icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: max-content;
-    text-align: center;
-    margin-top: -30px;
-    margin-left: 39px;
+    justify-content: space-between;
+}
+
+.card-title{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+    
+}
+.card-title h1 {
+    align-self: center;
+    font-size: 2.5rem;
+}
+
+.type {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: white;
 }
 
-.type1{
-    
-    width: 100px;
-    padding: 6px;
+.type li {
+    margin: 0 1.25rem;
+    padding: 1rem;
     border-radius: 1rem;
-    margin-left: 10px;
 }
-
-.type2{
-    
-    width: 100px;
-    padding: 6px;
-    border-radius: 1rem;
-    margin-left: 10px;
-}
-
 
 .image_body{
     display: flex;
-    width: 400px;
+    width: 500px;
     height: 200px;
     justify-content: center;
 }
@@ -94,14 +85,13 @@ body{
 #imgPoke{
     width: 200px;
     height: 200px;
-    position: absolute;
 }
 
 /*body tags*/
 
 .card_body{
     background-color: white;
-    width: 400px;
+    width: 450px;
     border-radius: 2.3rem 2.3rem 2rem 2rem;
     height: 370px;
 }
@@ -117,14 +107,14 @@ body{
 
 /*about tags*/
 
-.about{
+.active{
     display: block;
     border-bottom: 2px solid #777DA7;
     font-size: 15px;
     color: black;
 }
 
-.about_tags{
+.content-card{
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -132,76 +122,51 @@ body{
     color: #CECFD1;
 }
 
-.species{
+
+.content-card .details ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.details li{
     padding-bottom: 13px
 }
-
-.height{
-    padding-bottom: 13px
+.extra-details {
+    display: flex;
+    flex-direction: column;
 }
-
-.weight{
-    padding-bottom: 13px
-}
-
-.abilities{
-    padding-bottom: 3px
-}
-
-.breeding{
-    margin: 0;
-}
-
-#br1{
+#extra-details{
     color: black;
     font-size: large;
     margin: 1.5rem;
     margin-left: 0px;
 }
 
-.gender{
-    padding-bottom: 13px
-}
-
-.egg_group{
-    padding-bottom: 13px
-}
-
+.gender,
+.egg_group,
 .egg_cycle{
     padding-bottom: 13px
 }
 
 /**/
 
-.base_stats{
 
+.about button,
+.base_stats button,
+.evolution button,
+.moves button {
+    background-color: transparent;
+    border: none;
 }
-
-.evolution{
-
-}
-
-.moves{
-
-}
-
-@media screen and (max-width: 992px){
-    .card{
-        width: 450px;
-        height: 650px;
-    }
+.base_stats button:active {
+    border-bottom: 1px solid #777DA7;
+    
 }
 
 @media screen and (max-width: 576px){
-    .card{
-        width: 400px;
-        height: 600px;
-    }
-}
-
-@media screen and (max-width: 400px){
-    .card{
-        width: 400px;
-        height: 550px;
+    .card,
+    .card_body{
+        width: 100vw;
+        height: 100vh;
     }
 }

@@ -1,0 +1,18 @@
+.acordeon {
+    display: flex;
+    flex-direction: row;
+}
+
+.acordeon .content {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: .25s opacity ease-in-out;
+}
+
+.acordeon.open .content {
+    display: block;
+    padding: 0 1rem 1rem 2rem;
+    height: 100%;
+    opacity: 1;
+}
